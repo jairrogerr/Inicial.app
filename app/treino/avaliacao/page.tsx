@@ -10,6 +10,7 @@ import {
   Star,
   Zap,
   Award,
+  BookOpen,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTraining } from "@/lib/context/training-context";
@@ -226,14 +227,12 @@ export default function Avaliacao() {
           </Button>
           <Button
             variant="outline"
-            onClick={() => {
-              reset();
-              router.push("/");
-            }}
+            onClick={() => router.push("/treino/referencia")}
             className="flex-1"
+            style={{ borderColor: "#1E3A5F", color: "#1E3A5F" }}
           >
-            <Star className="w-4 h-4 mr-2" />
-            Ver dashboard
+            <BookOpen className="w-4 h-4 mr-2" />
+            Ver resposta de referência
           </Button>
         </div>
       </div>

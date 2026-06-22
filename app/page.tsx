@@ -317,9 +317,18 @@ export default function Dashboard() {
           <div className="space-y-6">
             {/* Performance chart by area */}
             <div className="bg-white rounded-2xl border border-border p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <TrendingUp className="w-4 h-4 text-muted-foreground" />
-                <h2 className="font-semibold text-sm">Desempenho por área</h2>
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-2">
+                  <TrendingUp className="w-4 h-4 text-muted-foreground" />
+                  <h2 className="font-semibold text-sm">Desempenho por área</h2>
+                </div>
+                <button
+                  onClick={() => router.push("/evolucao")}
+                  className="text-xs font-medium hover:underline"
+                  style={{ color: "#1E3A5F" }}
+                >
+                  Ver evolução
+                </button>
               </div>
               {history.length === 0 ? (
                 <p className="text-sm text-muted-foreground text-center py-4">

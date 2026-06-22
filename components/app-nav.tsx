@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, BookOpen, User, Trophy } from "lucide-react";
+import { LayoutDashboard, BookOpen, User, Trophy, TrendingUp } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useUser } from "@/lib/context/user-context";
 import { getLevelForXp, LEVELS } from "@/lib/types";
@@ -10,6 +10,7 @@ import { getLevelForXp, LEVELS } from "@/lib/types";
 const navItems = [
   { href: "/", label: "Dashboard", icon: LayoutDashboard },
   { href: "/treino", label: "Treinar", icon: BookOpen },
+  { href: "/evolucao", label: "Evolução", icon: TrendingUp },
   { href: "/ranking", label: "Ranking", icon: Trophy },
   { href: "/perfil", label: "Perfil", icon: User },
 ];
